@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icon.png" type="image/png">
+  <title>Gierki hazardowe</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: Arial, sans-serif; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      background-color: #f5f5f5; 
+      flex-direction: column;
+      padding-top: 50px;
+    }
+    
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #e0e0e0;
+      padding: 15px 0;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      z-index: 10;
+    }
+
+    header img {
+      height: 2.5em;
+      width: auto;
+      margin-left: 2em;
+    }
+    
+    header h1 {
+      margin-left: 10px;
+      font-size: 2em;
+      display: inline-block;
+      line-height: 1.5em;
+    }
+    
+    footer {
+      width: 100%;
+      margin-top: 40px;
+      padding: 20px 0;
+      background-color: #bdbdbd;
+      color: #333;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    /* Karta gry */
+    .karta-gry { 
+      background: #fff; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      width: 300px; 
+      text-align: center; 
+      cursor: pointer; 
+      text-decoration: none; 
+      transition: box-shadow 0.3s ease; 
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    
+    /* Obrazek gry */
+    .obrazek-gry { padding: 5%; }
+    .obrazek-gry img { width: 90%; height: auto; transition: transform 0.3s ease; }
+    
+    /* Informacje o grze */
+    .info-gry { padding: 16px; }
+    .tytul-gry { font-size: 24px; font-weight: bold; margin-bottom: 8px; color: #333; transition: color 0.3s ease; }
+    .opis-gry { font-size: 16px; color: #555; margin-bottom: 16px; }
+    
+    /* Przycisk Play */
+    .przycisk-play { padding: 12px 24px; background: #868a89; color: white; font-size: 16px; font-weight: bold; border-radius: 8px; text-transform: uppercase; transition: background-color 0.3s ease; margin-top: 16px; }
+    
+    /* Efekty najechania */
+    .karta-gry:hover { box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); }
+    .karta-gry:hover .obrazek-gry { padding: 2%; }
+    .karta-gry:hover .obrazek-gry img { transform: scale(1.05); }
+    .karta-gry:hover .przycisk-play { background: #098725; }
+
+    /* Zmiana koloru tytułu po najechaniu na całą kartę */
+    .karta-gry:hover .tytul-gry { color: #098725; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="casino.png" alt="Logo">
+    <h1>Gierki hazardowe</h1>
+  </header>
+  <h1 style="font-size: 32px; margin-bottom: 20px; color: #333;">Wybierz grę:</h1>
+  <!--Karty-->
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <!-- Pierwsza karta -->
+    <a href="ruletka.html" target="_blank" class="karta-gry">
+      <div class="obrazek-gry">
+        <img src="wheel.png" alt="Ruletka">
+      </div>
+      <div class="info-gry">
+        <div class="tytul-gry">Ruletka</div>
+        <div class="opis-gry">Postaw na numery, kolory lub sekcje<br>i zakręć by wygrać!</div>
+        <div class="przycisk-play">PLAY</div>
+      </div>
+    </a>
+
+    <!-- Druga karta -->
+    <a href="mines.html" target="_blank" class="karta-gry">
+      <div class="obrazek-gry">
+        <img src="bomb.png" alt="Mines">
+      </div>
+      <div class="info-gry">
+        <div class="tytul-gry">Mines</div>
+        <div class="opis-gry">Zabaw się w sapera, odminuj pole przy okazji mnożąc nagrodę.</div>
+        <div class="przycisk-play">PLAY</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Trzecia karta -->
+  <a href="slots.html" target="_blank" class="karta-gry">
+    <div class="obrazek-gry">
+      <img src="slots.png" alt="Mines">
+    </div>
+    <div class="info-gry">
+      <div class="tytul-gry">Slots</div>
+      <div class="opis-gry">Zakręć bębnem i wygraj!<br>Im lepsza kombinacja, tym większa nagroda.</div>
+      <div class="przycisk-play">PLAY</div>
+    </div>
+  </a>
+  </div>
+  <footer>
+    <p>© 2024 Gierasowijebiepala.com Wszelkie prawa zastrzeżone hejterzy.</p>
+  </footer>
+</body>
+</html>
