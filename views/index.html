@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../output.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../assets/icon.png" type="image/png">
+  <title>Noob Casino</title>
+</head>
+<body class="bg-background h-dvh">
+  <nav class="flex justify-center items-center w-dvw h-20 gap-4">
+    <img src="../assets/casino.png" width="48px">
+    <h1 class="font-black text-2xl">Noob Casino</h1>
+  </nav>
+  <main class="flex flex-wrap justify-center items-center w-full h-5/6 gap-x-10 gap-y-10">
+    <!-- Card -->
+    <div class="group bg-secondary w-56 flex flex-col justify-center items-center p-6 gap-2 rounded-3xl
+    transition-transform duration-300 hover:scale-105">
+      <img src="../assets/bomb.png" width="192px" class=" w-full h-full object-cover">
+      <h1 class="font-bold text-3xl
+      transition-colors duration-300 group-hover:text-green-400">Ruletka</h1>
+      <h2>Postaw na numery, kolory lub sekcje. Zakręć i wygraj!</h2>
+      <button onclick="location.href='./mines.html'" type="button" class="w-full bg-green-600 rounded-lg font-bold">GRAJ</button>
+    </div>
+    <!-- Card -->
+    <div class="group bg-secondary w-56 flex flex-col justify-center items-center p-6 gap-2 rounded-3xl
+    transition-transform duration-300 hover:scale-105">
+      <img src="../assets/bomb.png" width="192px" class=" w-full h-full object-cover">
+      <h1 class="font-bold text-3xl
+      transition-colors duration-300 group-hover:text-green-400">Saper</h1>
+      <h2>Zabaw się w sapera, odminuj pole przy okazji mnożąc nagrodę.</h2>
+      <button onclick="location.href='./mines.html'" type="button" class="w-full bg-green-600 rounded-lg font-bold">GRAJ</button>
+    </div>
+  </main>
+</body>
+</html>
